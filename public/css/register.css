@@ -1,0 +1,223 @@
+.main-form {
+    align-items: baseline;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.create-form {
+    width: 100%;
+    padding: 20px 15px;
+    display: inline-block;
+    align-items: baseline;
+}
+
+.create-form div {
+    text-align: left;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control {
+    width: 300px;
+    padding: 8px;
+    
+}
+
+.control-formulario input {
+    border: none;
+    margin-top: 15px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+}
+
+.control-formulario h4{
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.button-form {
+    background-color: var(--Green);
+    border: none;
+    font-size: 20px;
+    color: var(--White);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.padre-control {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.hijo-control {
+    align-items: center;
+    width: 50%;
+    display: contents;
+    padding-left: 15px;
+    flex-direction: row;
+}
+
+.hijo-control input {
+    position: relative;
+    left: -2px;
+}
+.hijo-control label{
+    margin-right: 20px;
+    height: 45px;
+} 
+
+
+.padre-control2 {
+    display: inline-block;
+    flex-wrap: nowrap;
+
+}
+
+.hijo-control2 {
+    position: relative;
+    width: 50%;
+    display: inline-flex;
+    padding-left: 10px;
+}
+
+.hijo-control2 label {
+    position: relative;
+    top: 13px;
+    padding-left: 15px;
+    align-content: center;
+}
+
+.profile-div {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.profile-form input {
+    width: 20px;
+    flex-grow: 0.5;
+    text-align: center;
+
+}
+
+.button-form a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.button-form {
+    font-size: 100%;
+    background-color: var(--Green);
+    box-shadow: 0px 0px 10px var(--Shadow-Gray);
+
+}
+
+.button-form:hover{
+    background-color: var(--Blue2);
+}
+
+#dia-nacimiento{
+    margin-top: 0px;
+}
+
+button:active {
+    padding: 7px 12px;
+}
+
+.error-contenedor{
+    position: relative;
+    width: 300px;
+}
+.input-label{
+    width: 100%;
+    position: relative;
+}
+.msg-error {
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    padding-left: 2px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    color: var(--Red);
+    font-size: 10px;
+}
+
+.msg-error i{
+    position: absolute;
+    top: -27px;
+    right: 5px;
+    font-size: 18px;
+}
+
+#icon-danger{
+    position: absolute;
+    top: -32.5px;
+    right: 5px;
+    font-size: 18px;
+
+}
+
+:invalid ~ .msg-error {
+    display: block;
+    
+}
+
+.label-image-profile {
+    position: relative;
+    display: inline-block;
+    margin: 10px, 0, 20px;
+}
+
+.label-image-profile::before {
+    background-color: var(--Blue2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 15px;
+    content: 'Selecciona tu avatar'; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.label-image-profile input[type="file"] {
+    opacity: 0;
+    width: 150px;
+    height: 20px;
+    display: inline-block;
+}
+
+#src-file1::before {
+    content: 'Selecciona tu avatar';
+}
+
+.image-h4{ 
+    margin-top: 20px;
+    margin-bottom: 15px !important;
+}
+
+.main-form {
+    width: 100%;
+    background-color: var(--Light-Gray);
+    text-align: center;
+    margin-top: 180px;
+}
+.input-label input{
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
