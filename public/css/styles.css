@@ -45,11 +45,12 @@ body {
     font-size: 12px;
     text-align: center;
     padding-left: 0px;
-
 }
 
 .titulares {
     font-size: 24px;
+    text-align: left;
+    padding-left: 8%;
 }
 
 .precios {
@@ -65,6 +66,7 @@ body {
     font-weight: bold;
     flex: 70%;
     margin: 0%;
+    padding-left: 10px;
 }
 
 header {
@@ -123,7 +125,7 @@ main section {
     flex-wrap: wrap;
     align-items: flex-start;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     transition-property: transform;
 }
@@ -132,6 +134,11 @@ main section {
     transition-duration: 500ms;
 }
 
+.precio-descuento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .articulos {
     display: block;
@@ -242,7 +249,6 @@ main section div article:hover .descripciones {
 
 /*------------------------------------ Footer -----------------------------------------------*/
 
-
 .contenedor02 {
     width: 100%;
     background-color: var(--White);
@@ -252,6 +258,7 @@ main section div article:hover .descripciones {
 
 .pie-de-pagina {
     display: flex;
+    flex-direction: column;
 }
 
 .pie-de-pagina div {
@@ -314,8 +321,12 @@ main section div article:hover .descripciones {
 
 }
 
+#icono-pie-de-pagina {
+    color: var(--Blue);
+}
+
 /* Navegación en tablets (ancho mínimo 426 px)-------------------------------------------*/
-@media (min-width: 426px) {
+@media (min-width: 361px) {
     .main-header-top-bar {
         justify-content: space-around;
     }
@@ -352,7 +363,11 @@ main section div article:hover .descripciones {
     }
 
     .articulos {
-        width: 45%;
+        width: 35%;
+    }
+
+    #icono-pie-de-pagina:hover {
+        color: var(--Light-Blue)
     }
 
     .contenedor-articulos {
@@ -392,6 +407,10 @@ main section div article:hover .descripciones {
     .copy-header {
         font-size: 15px;
     }
+
+    .pie-de-pagina {
+        flex-direction: row;
+    }
 }
 
 
@@ -400,12 +419,17 @@ main section div article:hover .descripciones {
     .articulos {
         width: 20%;
     }
+
     .rigth-navbar {
         right: 25px;
     }
+
     .main-header-top-bar {
         padding-right: 10px;
     }
 
+    .titulares {
+        padding-left: 2.5%;
+    }
 
 };
